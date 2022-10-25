@@ -1,0 +1,59 @@
+#titulo-contacto {
+    text-align: center;
+}
+
+#datos-adicionales-contacto {
+    font-size: 1.8rem;
+    display: flex;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.icono-contacto {
+    margin-right: 1rem;
+}
+
+.linea{
+    font-family: 'Poppins';
+    color: #1f1f1f;
+    display:block;
+}
+.linea::after {
+    display:block;
+    clear:both;
+    content : "";
+    position: relative;
+    right    : 25%;
+    bottom  : 0;
+    max-width:250px;
+    height  : 1px;
+    width   : 50%;
+    border-bottom:2px solid #1f1f1f;
+    margin: 0 auto;
+    padding:4px 0px;
+}
+
+/****FORMULARIO Y MAPA****/
+
+#contenedor-secciones-contacto {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 3rem auto;
+    align-items: center;
+}
+
+#contenedor-secciones-contacto section {
+    max-width: 50%;
+}
+
+#formulario-contacto label {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+#formulario-contacto input,
+#formulario-contacto textarea,
+#formulario-contacto .btn {
+    font-size: 1.6rem;
+}

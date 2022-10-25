@@ -32,7 +32,6 @@ body {
     background-color: #F9F9F9;
 }
 
-/***HEADER***/
 
 /***NAVBAR***/
 .nav-bar {
@@ -126,6 +125,19 @@ body {
 .menu-btn.open .menu-btn_burguer::after {
     transform: rotate(-45deg) translate(3.5rem, 3.5rem);
 }
+
+main {
+    width: 100%;
+}
+
+.titulos {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 2rem;
+    color: #1f1f1f;
+}
+
+
 
 /**MEDIAQUERY PARA RESPONSIVE**/
 

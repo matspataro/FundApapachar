@@ -1,3 +1,4 @@
+//función para desplegar el menú hamburguesa//
 const MENUBTN = document.querySelector('.menu-btn');
 const NAVMENU = document.querySelector('.nav-menu')
 MENUBTN.addEventListener('click', () => {

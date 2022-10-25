@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--FONTSAWESOME-->
     <script src="https://kit.fontawesome.com/825ded040c.js" crossorigin="anonymous"></script>
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/contacto.css">
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +23,7 @@
     <link rel="mask-icon" href="Img/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <title>Asociación ECAF Apapachar </title>
+    <title>Contacto | Asociación ECAF Apapachar </title>
 </head>
 <body>
         <header>
@@ -39,53 +42,63 @@
                 </ul>
             </nav>
         </header>
-        <section class="">
-            <div><h1>CONTACTO</h1></div>
-            <div><h2>ESTEMOS EN CONTACTO</h2></div>
-            <div><p>Si tenés alguna consulta, duda, sugerencia o mensaje, podés enviárnoslo a través del siguiente formulario:</p></div>
-            <div>
-                <form class="contacto-form" action="">
-                    <label for="nombre">Nombre*</label>
-                    <br />
-                    <input type="text" id="nombre" placeholder="Ingresa tu nombre..." required/>
-                    <br />
-                    <label for="apellido">Apellido</label>
-                    <br />
-                    <input type="text" id="apellido" placeholder="Ingresa tu apellido..." />
-                    <br />
-                    <label for="email">Correo electrónico*</label>
-                    <br />
-                    <input type="email" id="email" placeholder="Ingresa tu email" required/>
-                    <br />
-                    <label for="telefono">Número de teléfono*</label>
-                    <br />
-                    <input type="number" id="telefono" placeholder="Ingresa tu número de teléfono" required/>
-                    <br />
-                    <label for="mensaje">Ingresa aquí tu mensaje*</label>
-                    <br />
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje..." required></textarea>
-                    <br />
-                    <input type="checkbox" name="suscripcion" id="suscripcion" checked>Envíame información sobre noticias y eventos.
-                    <br />
-                    <button>Enviar</button>
-                </form>
+        <main>
+            <h1 class="titulos" id="titulo-contacto">Estemos en contacto</h1>
+            <div id="datos-adicionales-contacto">
+                <div class="datos-contacto-clasicos">
+                    <h2>Datos de contacto</h2>
+                    <div class="linea"></div>
+                    <p><i class="fa-solid fa-location-dot icono-contacto"></i>Chile 4544, Guaymallen. Mendoza.</p>
+                    <p><i class="fa-solid fa-phone icono-contacto"></i><a href="tel:+5492613972783">(+54) 9 261 3972783</a></p>
+                    <p><i class="fa-sharp fa-solid fa-envelope icono-contacto"></i><a href="mailto:asoapapachar@gmail.com">asoapapachar@gmail.com</a></p>
+                    <h2>Envíanos un e-mail</h2>
+                    <div class="linea"></div>
+                </div>
             </div>
-            <div>
-                <h2>Contáctanos</h2>
-                <p><a href="tel:+5492613972783">(+54) 9 261 3972783</a></p>
+            <div id="contenedor-secciones-contacto">
+                <section id="formulario-contacto" class="container">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" pattern="[a-zA-Z ]*" title="Utiliza únicamente caracteres alfabéticos" placeholder="Ingresa tu nombre" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Correo electrónico</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="ingresa tu email" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Teléfono (opcional)</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="ingresa tu teléfono">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" rows="5" name="comentarios" placeholder="Escribe aquí tu mensaje" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3">
+                            <input type="checkbox" name="suscripcion" id="suscripcion" checked>Envíame información sobre noticias y eventos.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3"><button type="submit" class="btn btn-dark">Enviar</button></div>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+                <section id="datos-de-contacto">
+                    <iframe id="mapa-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.0509480739534!2d-68.7823338!3d-32.896821200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0e9415d7d75b%3A0x9186bcf99484b573!2sChile%204544%2C%20M5521%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1666223447699!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
             </div>
-            <div>
-                <h2>Visítanos</h2>
-                <p>Chile 4544, Guaymallen. Mendoza.</p>
-            </div>
-            <div>
-                <h2>Escríbenos</h2>
-                <p><a href="mailto:asoapapachar@gmail.com">asoapapachar@gmail.com</a></p>
-            </div>
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.0509480739534!2d-68.7823338!3d-32.896821200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0e9415d7d75b%3A0x9186bcf99484b573!2sChile%204544%2C%20M5521%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1666223447699!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
+        </main>
         <footer>
             <div>
                 <a href="https://www.instagram.com/asoc_apapachar/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
@@ -94,5 +107,7 @@
         </footer>
     <!--MENU HAMBURGUESA-->
     <script src="Main.js"></script> 
+    <!--BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
