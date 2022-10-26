@@ -1,12 +1,7 @@
 /*** CARROUSEL ***/
-.pic-ctn {
-    width: 100vw;
-    height: 200px;
-}
-
 @keyframes display {
     0% {
-    transform: translateX(200px);
+    transform: translateX(150px);
     opacity: 0;
     }
     10% {
@@ -27,10 +22,13 @@
     }
 }
 
+.diapositiva {
+    width: 100%;
+}
 .pic-ctn {
     position: relative;
     width: 80vw;
-    height: 200px;
+    height: 150px;
     margin-top: 0;
 }
 

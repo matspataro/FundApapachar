@@ -1,0 +1,54 @@
+/* Fuente para toda la página
+
+* {font-family: 'Courier New', Courier, monospace;}*/
+
+
+.container {
+    display: grid;
+    grid-template: 400px 400px 400px/ 65% 35%; 
+    grid-template-areas: "izq contenido" "izq contenido" "izq contenido";
+    gap: 1%;
+
+    }
+
+.imgproy {
+    width: 100%;
+    height: 380px;
+    border-radius: 30px;
+}
+
+.izq       { /*grid-area: izq;  */     background-color: rgb(150, 243, 247);  }
+.contenido { /*grid-area: contenido;*/ background-color: rgb(243, 224, 243);}
+
+.item {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/*----------------------------------------------------------------*/
+/* Punto de corte para pantallas tipo tablet                      */
+/*----------------------------------------------------------------*/
+@media only screen and (max-width: 800px) {
+    .container {
+        /* Uso un atajo para definir 4 filas / 2 columna */
+        grid-template: 100px auto auto 60px / 30% auto; 
+
+        /* Distribuimos el contenido en cada fila */
+        grid-template-areas: "header header" "izq contenido" "der der" "pie pie";
+    }
+}
+
+
+/*----------------------------------------------------------------*/
+/* Punto de corte para pantallas tipo celular                     */
+/*----------------------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+    .container {
+        /* Uso un atajo para definir 6 filas / 1 columna */
+        grid-template: 100px auto auto auto 60px / 100%; 
+
+        /* Distribuimos el contenido en cada fila */
+        grid-template-areas: "header" "izq" "contenido" "der" "pie";
+    }
+}
