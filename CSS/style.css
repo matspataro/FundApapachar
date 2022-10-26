@@ -30,8 +30,20 @@ body {
     font-size: 1.6rem;
     padding-top: 10rem;
     background-color: #F9F9F9;
+    
 }
 
+#cuerpo {
+    align-self: center;
+    background-color: #bebdfc;
+}
+
+#fotoprincipal {
+    vertical-align: center;
+    padding-bottom: 50px;
+    
+       
+}
 
 /***NAVBAR***/
 .nav-bar {
@@ -137,7 +149,16 @@ main {
     color: #1f1f1f;
 }
 
+p {
+    background-color: white;
+    text-align: justify;
+}
 
+footer {
+    text-align: center;
+    font-size: 35px;
+    background-color: #ecd8e6;
+}
 
 /**MEDIAQUERY PARA RESPONSIVE**/
 
