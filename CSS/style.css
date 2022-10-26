@@ -36,10 +36,12 @@ body {
 /***NAVBAR***/
 .nav-bar {
     display: flex;
+    overflow: hidden;
     justify-content: space-between;
     align-items: center;
     background-color: #CDF0EA;
     height: 10rem;
+    transition: 0.4s;
     position: fixed;
     width: 100%;
     top: 0;
@@ -48,8 +50,13 @@ body {
 }
 
 .logo {
-    width: 20rem;
+    width: 150px;
     height: auto;
+}
+
+.logo img {
+    width:150px;
+    transition: 0.4s;
 }
 
 .nav-menu {
@@ -137,7 +144,16 @@ main {
     color: #1f1f1f;
 }
 
+/**GENERALES**/
 
+#link {
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+#link:hover {
+    color: #696969;
+}
 
 /**MEDIAQUERY PARA RESPONSIVE**/
 
