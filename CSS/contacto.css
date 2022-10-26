@@ -1,5 +1,5 @@
 #titulo-contacto {
-    text-align: center;
+    text-transform: uppercase;
 }
 
 #datos-adicionales-contacto {
@@ -14,7 +14,6 @@
 }
 
 .linea{
-    font-family: 'Poppins';
     color: #1f1f1f;
     display:block;
 }
@@ -56,4 +55,29 @@
 #formulario-contacto textarea,
 #formulario-contacto .btn {
     font-size: 1.6rem;
+}
+
+/* MEDIAQUERY PARA RESPONSIVE */
+
+@media (max-width: 768px) {
+    .datos-contacto-clasicos {
+        margin-bottom: 2rem;
+        max-width: none;
+    }
+    #contenedor-secciones-contacto {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #contenedor-secciones-contacto section {
+        max-width: none;
+    }
+}
+
+@media (max-width: 576px) {
+    #datos-adicionales-contacto {
+        font-size: 1.5rem;
+    }
+    #mapa-google {
+        max-width: 100%;
+    }
 }
