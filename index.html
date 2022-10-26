@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/825ded040c.js" crossorigin="anonymous"></script>
     <!--CSS-->
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/index.css">
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,50 +24,61 @@
     <title>Asociación ECAF Apapachar </title>
 </head>
 <body>
-    <div>
-        <header>
-            <nav class="nav-bar">
-                <div class="logo">
-                <a href="index.html"><img src="Img/Logo_vacío_sin_fondo.png" alt="Asociación Apapachar"></a>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+            <a href="index.html"><img src="Img/Logo_vacío_sin_fondo.png" alt="Asociación Apapachar"></a>
+            </div>
+            <div class="menu-btn">
+                <div class="menu-btn_burguer"></div>
+            </div>
+            <ul class="nav-menu">
+                    <li ><a href="Nosotros.html">Quienes Somos</a></li>
+                    <li ><a href="Proyectos.html">Proyectos</a></li>
+                    <li ><a href="Voluntariado.html">Voluntariado</a></li>
+                    <li ><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titulos">Asociación Apapachar</h1>
+        <div class="linea"></div>
+        <div class="cuerpo">
+            <div class="contenedor">
+                <div id="contenedorinicio">
+                    <div id="textoinicio">
+                        <h2>Quienes Somos</h2>
+                        <p>Somos una asociación argentina, parte de los Equipos Comunitarios de Acompañamiento Familiar (ECAF), que trabaja en la promoción y protección de los derechos de las niñas, niños y adolescentes</p>
+                    </div>
+                    <a id="boton-nosotros" href="Nosotros.html">Leer más</a>
                 </div>
-                <div class="menu-btn">
-                    <div class="menu-btn_burguer"></div>
-                </div>
-                <ul class="nav-menu">
-                        <li ><a href="Nosotros.html">Quienes Somos</a></li>
-                        <li ><a href="Proyectos.html">Proyectos</a></li>
-                        <li ><a href="Voluntariado.html">Voluntariado</a></li>
-                        <li ><a href="Contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div id="cuerpo">
-                <span><video width="800" controls>
+                <div>
+                    <video width="800" controls>
                         <source src="img/vvideo.mp4" alt="no">
-                </video >
-                <img id="fotoprincipal" src="img/uno.jpeg" height="350" alt="apapachar">
-            </span>
-                <span class="textoinicio"><p>Tal vez muchos piensen que siempre existieron los servicios de 
-                    protección tal y como son hoy. Sin embargo en el caso de <b>APAPACHAR</b> venimos 
-                trabajando desde el año 2004 constituyendose  como el primer Servicio de Protección de derechos
-            de Niños, niñas y adolescentes en Mendoza con un proyecto de CONAF (Consejo Nacional de niñez, 
-            adolescencia y familia). Por otro lado, junto a UNICEF, Municipalidad de Guaymallén y tres organizaciones
-         más, trabajamos como primer servicio de protección Mixto del país (Estado y organizaciones), estableciendo
-         una nueva institucionalidad en infancias.</p>
-         <p>Por eso y por mucho más agradecemos inmensamente al equipo de <b>APAPACHAR</b> por todo el amor, el compromiso y
-         la vocación que le ponen día a día para hacer que nuestra querida Asociación brille siempre ynunca deje de
-         existir.</p></span>
-                                            
-              </div>    
-        </main>
-    </div> 
-    <footer>
-        <div>
-            <a href="https://www.instagram.com/asoc_apapachar/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="https://www.facebook.com/AsocAPAPACHAR/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    </video >
+                </div>
+            </div> 
         </div>
-        
+    </main>
+    <footer>
+        <div id="contenedor-secciones-footer">
+            <section >
+            <img class="logo-footer" src="Img/Logo_vacío_sin_fondo.png" alt="Asociación Apapachar"></a>
+            </section>
+            <section>
+            <div class="datos-footer">
+                <p>Chile 4544, Guaymallen, Mendoza.</p>
+                <p><a id="link" href="tel:+5492613972783">(+54) 9 261 3972783</a> | <a id="link" href="mailto:asoapapachar@gmail.com">asoapapachar@gmail.com</a></p>
+            </div>
+            <div>
+                <a id="link" href="https://www.instagram.com/asoc_apapachar/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a id="link" href="https://www.facebook.com/AsocAPAPACHAR/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            </div>
+            </section>
+        </div>
+        <div>
+            <p>© Copyright 2022. Todos los derechos reservados a Asociación Apapachar | Sitio desarrollado por MyM</p>
+        </div>
     </footer>
     <!--MENU HAMBURGUESA-->
     <script src="Main.js"></script>  
