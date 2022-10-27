@@ -5,15 +5,16 @@
 
 .container {
     display: grid;
-    grid-template: 400px 400px 400px/ 65% 35%; 
+    grid-template: 450px 450px 450px/ 60% 40%; 
     grid-template-areas: "izq contenido" "izq contenido" "izq contenido";
     gap: 1%;
+    margin-bottom: 35px;
 
     }
 
 .imgproy {
     width: 100%;
-    height: 380px;
+    height: 430px;
     border-radius: 30px;
 }
 
@@ -32,10 +33,11 @@
 @media only screen and (max-width: 800px) {
     .container {
         /* Uso un atajo para definir 4 filas / 2 columna */
-        grid-template: 100px auto auto 60px / 30% auto; 
+        grid-template: 450px 450px 450px 450px 450px 450px / 100%; 
 
         /* Distribuimos el contenido en cada fila */
-        grid-template-areas: "header header" "izq contenido" "der der" "pie pie";
+        grid-template-areas: "izq" "contenido" "izq" "contenido" "izq" "contenido";
+        margin-bottom: 150px;
     }
 }
 
@@ -46,9 +48,10 @@
 @media only screen and (max-width: 600px) {
     .container {
         /* Uso un atajo para definir 6 filas / 1 columna */
-        grid-template: 100px auto auto auto 60px / 100%; 
+        grid-template: auto auto auto auto auto / 100%; 
 
         /* Distribuimos el contenido en cada fila */
-        grid-template-areas: "header" "izq" "contenido" "der" "pie";
+        grid-template-areas: "izq" "contenido" "izq" "contenido" "izq" "contenido";
+        margin-bottom: 150px;
     }
 }
