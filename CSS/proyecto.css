@@ -1,25 +1,17 @@
-/* Fuente para toda la página
-
-* {font-family: 'Courier New', Courier, monospace;}*/
-
-
 .container {
     display: grid;
-    grid-template: 450px 450px 450px/ 60% 40%; 
-    grid-template-areas: "izq contenido" "izq contenido" "izq contenido";
-    gap: 1%;
+    grid-template-columns: auto auto;
+    gap: 20px 10px;
     margin-bottom: 35px;
 
     }
 
 .imgproy {
-    width: 100%;
-    height: 430px;
+    width: 80%;
+    height: auto;
     border-radius: 30px;
 }
 
-.izq       { /*grid-area: izq;  */     background-color: rgb(150, 243, 247);  }
-.contenido { /*grid-area: contenido;*/ background-color: rgb(243, 224, 243);}
 
 .item {
     padding: 10px;
