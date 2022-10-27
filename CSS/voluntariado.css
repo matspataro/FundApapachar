@@ -1,0 +1,10 @@
+#inprogress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inprogress img {
+    width: 25%;
+    padding: 1rem;
+}

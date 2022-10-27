@@ -5,7 +5,7 @@
 #datos-adicionales-contacto {
     font-size: 1.8rem;
     display: flex;
-    width: 90%;
+    max-width: 73%;
     margin: 2rem auto;
 }
 
@@ -70,6 +70,9 @@
     }
     #contenedor-secciones-contacto section {
         max-width: none;
+    }
+    #datos-adicionales-contacto {
+        max-width: 83%;
     }
 }
 

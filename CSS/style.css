@@ -162,24 +162,17 @@ footer {
 
 #contenedor-secciones-footer {
     display: flex;
-    width: 90%;
     justify-content: space-around;
     margin: 1rem auto;
     align-items: center;
 }
 
-#contenedor-secciones-footer section {
-    max-width: 50%;
+#logo-footer {
+    width: 17rem;
 }
 
-.logo-footer {
-    width: 20rem;
-    border-radius: 10rem;
-    margin: 2rem;
-}
-
-.datos-footer {
-    justify-content: right;
+#datos-footer p {
+    text-align: right;
 }
 
 #link {
@@ -189,6 +182,19 @@ footer {
 
 #link:hover {
     color: #696969;
+}
+
+.social-media-footer {
+    font-size: 2.5rem;
+    text-align: right;
+}
+
+.firma {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    background: #d693c2;
+    padding: 0.5rem;
+    margin: 0;
 }
 
 /**MEDIAQUERY PARA RESPONSIVE**/
@@ -224,6 +230,13 @@ footer {
     }
     .nav-menu_visible {
         left: 0%;
+    }
+    #contenedor-secciones-footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #contenedor-secciones-footer section {
+        max-width: none;
     }
 }
 
@@ -262,5 +275,7 @@ footer {
     .nav-menu_visible {
         left: 0%;
     }
-    
+    #contenedor-secciones-footer {
+        font-size: 1.5rem;
+    }
 }
