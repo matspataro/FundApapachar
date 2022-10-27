@@ -1,0 +1,57 @@
+/* Fuente para toda la página
+
+* {font-family: 'Courier New', Courier, monospace;}*/
+
+
+.container {
+    display: grid;
+    grid-template: 450px 450px 450px/ 60% 40%; 
+    grid-template-areas: "izq contenido" "izq contenido" "izq contenido";
+    gap: 1%;
+    margin-bottom: 35px;
+
+    }
+
+.imgproy {
+    width: 100%;
+    height: 430px;
+    border-radius: 30px;
+}
+
+.izq       { /*grid-area: izq;  */     background-color: rgb(150, 243, 247);  }
+.contenido { /*grid-area: contenido;*/ background-color: rgb(243, 224, 243);}
+
+.item {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/*----------------------------------------------------------------*/
+/* Punto de corte para pantallas tipo tablet                      */
+/*----------------------------------------------------------------*/
+@media only screen and (max-width: 800px) {
+    .container {
+        /* Uso un atajo para definir 4 filas / 2 columna */
+        grid-template: 450px 450px 450px 450px 450px 450px / 100%; 
+
+        /* Distribuimos el contenido en cada fila */
+        grid-template-areas: "izq" "contenido" "izq" "contenido" "izq" "contenido";
+        margin-bottom: 150px;
+    }
+}
+
+
+/*----------------------------------------------------------------*/
+/* Punto de corte para pantallas tipo celular                     */
+/*----------------------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+    .container {
+        /* Uso un atajo para definir 6 filas / 1 columna */
+        grid-template: auto auto auto auto auto / 100%; 
+
+        /* Distribuimos el contenido en cada fila */
+        grid-template-areas: "izq" "contenido" "izq" "contenido" "izq" "contenido";
+        margin-bottom: 150px;
+    }
+}
