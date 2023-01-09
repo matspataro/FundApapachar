@@ -1,10 +1,38 @@
 .container {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 20px 10px;
-    margin-bottom: 35px;
-
-    }
+    display: grid; 
+    grid-template-columns: repeat(4, auto); 
+    grid-template-rows: repeat(3, auto); 
+    gap: 0px 0px; 
+    padding-top: 20px;
+    grid-template-areas: 
+    "item-izq-1 item-izq-1 item-contenido-1 item-contenido-1"
+    "item-izq-2 item-izq-2 item-contenido-2 item-contenido-2"
+    "item-izq-3 item-izq-3 item-contenido-3 item-contenido-3"; 
+}
+.item-izq-1 { grid-area: item-izq-1;
+    padding: 15px;
+    text-align: center;
+    align-self: center;
+}
+.item-izq-2 { grid-area: item-izq-2;
+    padding: 15px;
+    text-align: center;
+    align-self: center; 
+}
+.item-izq-3 { grid-area: item-izq-3;
+    padding: 15px;
+    text-align: center;
+    align-self: center; 
+}
+.item-contenido-1 { grid-area: item-contenido-1;
+    padding: 15px; 
+}
+.item-contenido-2 { grid-area: item-contenido-2;
+    padding: 15px; 
+}
+.item-contenido-3 { grid-area: item-contenido-3;
+    padding: 15px; 
+}
 
 .imgproy {
     width: 80%;
@@ -13,37 +41,51 @@
 }
 
 
-.item {
-    padding: 10px;
-    border-radius: 10px;
-}
+/**MEDIAQUERY PARA RESPONSIVE**/
 
+@media (max-width: 768px) {
+    .container {  display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(6, auto);
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "item-contenido-1 item-contenido-1 item-contenido-1 item-contenido-1"
+        "item-izq-1 item-izq-1 item-izq-1 item-izq-1"
+        "item-contenido-2 item-contenido-2 item-contenido-2 item-contenido-2"
+        "item-izq-2 item-izq-2 item-izq-2 item-izq-2"
+        "item-contenido-3 item-contenido-3 item-contenido-3 item-contenido-3"
+        "item-izq-3 item-izq-3 item-izq-3 item-izq-3";
+    }
+    
+    .item-izq-1 { grid-area: item-izq-1;
+        padding: 15px;
+        text-align: center;
+        align-self: center;
+    }
+    .item-izq-2 { grid-area: item-izq-2;
+        padding: 15px;
+        text-align: center;
+        align-self: center; 
+    }
+    .item-izq-3 { grid-area: item-izq-3;
+        padding: 15px;
+        text-align: center;
+        align-self: center; 
+    }
+    .item-contenido-1 { grid-area: item-contenido-1;
+        padding: 15px; 
+    }
+    .item-contenido-2 { grid-area: item-contenido-2;
+        padding: 15px; 
+    }
+    .item-contenido-3 { grid-area: item-contenido-3;
+        padding: 15px; 
+    }
 
-/*----------------------------------------------------------------*/
-/* Punto de corte para pantallas tipo tablet                      */
-/*----------------------------------------------------------------*/
-@media only screen and (max-width: 800px) {
-    .container {
-        /* Uso un atajo para definir 4 filas / 2 columna */
-        grid-template: 450px 450px 450px 450px 450px 450px / 100%; 
-
-        /* Distribuimos el contenido en cada fila */
-        grid-template-areas: "izq" "contenido" "izq" "contenido" "izq" "contenido";
-        margin-bottom: 150px;
+    h3 {
+        text-align: center;
     }
 }
 
 
-/*----------------------------------------------------------------*/
-/* Punto de corte para pantallas tipo celular                     */
-/*----------------------------------------------------------------*/
-@media only screen and (max-width: 600px) {
-    .container {
-        /* Uso un atajo para definir 6 filas / 1 columna */
-        grid-template: auto auto auto auto auto / 100%; 
-
-        /* Distribuimos el contenido en cada fila */
-        grid-template-areas: "izq" "contenido" "izq" "contenido" "izq" "contenido";
-        margin-bottom: 150px;
-    }
-}
