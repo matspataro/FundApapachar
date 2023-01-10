@@ -73,3 +73,8 @@
     transition: .5s;
 }
 
+@media (max-width: 576px) {
+    video {
+        width: 90%;
+    }    
+}

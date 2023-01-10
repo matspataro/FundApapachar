@@ -37,6 +37,7 @@
     border-radius: 10%;
 }
 
+
 #objetivos-lista h2 {
     font-size: 2.5rem;
 }
@@ -65,5 +66,12 @@
     }
     .contenedor-objetivos div {
         max-width: none;
+    }
+    #objetivos-lista {
+        margin-top: 30px;
+        width: 100%;
+    }
+    #contenedor-nosotros {
+        width: 100%;
     }
 }
